@@ -1,4 +1,4 @@
-import utils from "./utiles";
+import utils from "../Helpers/utiles";
 
 const Star = (props) => {
     return ( 

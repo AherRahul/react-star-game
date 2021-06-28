@@ -1,4 +1,4 @@
-import colors from "./constants";
+import colors from "../Helpers/constants";
 
 const NumberButton = (props) => {
     return ( 

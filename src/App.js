@@ -1,5 +1,5 @@
 import './App.css';
-import StarMatch from './StarMatch';
+import StarMatch from './Components/StarMatch';
 
 function App() {
   return (

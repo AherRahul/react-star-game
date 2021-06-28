@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import utils from './utiles.js';
+import {useEffect, useState} from 'react';
+import utils from '../Helpers/utiles.js';
 
 
 const useGameState = () => {

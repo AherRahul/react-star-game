@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import utils from './utiles.js';
+import React from 'react';
+import utils from '../Helpers/utiles.js';
 import NumberButton from './NumberButton.js';
 import Star from './Star';
 import PlayAgain from './PlayAgain';
-import useGameState from './useGameState';
+import useGameState from '../CustomHooks/useGameState';
 
 const Game = (props) => {
     const { stars, availableNums, candidateNums, secondsLeft, setGameState } = useGameState()
@@ -24,7 +24,7 @@ const Game = (props) => {
     }
 
     const onNumberClick = (num, currentStatus) => {
-        if (currentStatus === 'used' || gameStatus != 'active') {
+        if (currentStatus === 'used' || gameStatus !== 'active') {
             return;
         }
 
